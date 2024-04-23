@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Proyecto</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="logo-uca.png">
+        <p class="portada">Desarrollo Web I</p>
+        <p class="portada">Proyecto final</p>
+        <p class="portada">Estudiante: Karla Araya</p>
+    </header>
+    <main>
+        <div class="container__formulario">
+            <label> Ingrese lo que se le solicita:</label>
+            <form id="miFormulario">
+                <label for="tipoIdentificacion">Tipo de identificación:</label>
+                <select id="tipoIdentificacion" required>
+                    <option value=""disabled selected hidden>Seleccione</option>
+                    <option value="Nacional">Nacional</option>
+                    <option value="Extranjero">Extranjero</option>
+                </select>
+                <label for="numeroIdentificacion"> Número de identificacion:</label>
+                <input type="text" id="numeroIdentificacion" required>
+                <label for="nombreCompleto"> Nombre completo:</label>
+                <input type="text" id="nombreCompleto"required>
+                <label for="apellidoPaterno"> Apellido paterno:</label>
+                <input type="text" id="apellidoPaterno"required>
+                <label for="apellidoMaterno">Apellido materno:</label>
+                <input type="text" id="apellidoMaterno"required>
+                <label for="genero">Género:</label>
+                <select id="genero"required> 
+                    <option value=""disabled selected hidden>Seleccione</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="No binario">No Binario</option>
+                    <option value="Masculino">Masculino</option>
+                </select>
+                <label for="fechaNacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fechaNacimiento" required>
+                <label for="lugarNacimiento">Lugar de nacimiento</label>
+                <textarea placeholder="Dirección exacta" id="lugarNacimiento" required></textarea>
+                <label for="nacionalidad">Nacionalidad:</label>
+                <input type="text" id="nacionalidad" required>
+                <label>Estado civil:</label>
+                <select id="estadoCivil" required>
+                    <option value=""disabled selected hidden>Seleccione</option>
+                    <option value="Soltero(a)">Soltero(a)</option>
+                    <option value="Casado(a)">Casado(a)</option>
+                    <option value="Divorciado(a)">Divorciado(a)</option>
+                    <option value="Separación en proceso judicial">Separación en proceso judicial</option>
+                    <option value="Viudo(a)">Viudo(a)</option>
+                    <option value="Concubinato(a)">Concubinato(a)</option>
+                </select>
+                <label for="numeroTelefonico">Número telefónico:</label>
+                <input type="text" id="numeroTelefonico" required>
+                <label for="correoElectronico"> Correo electrónico:</label>
+                <input type="email" id="correoElectronico" required>
+                <label for="domicilio">Domicilio:</label>
+                <textarea placeholder="Dirección exacta" id="domicilio" required></textarea>
+                <label for="provincia">Provincia:</label>
+                <select id="provincia" required>
+                    <option value=""disabled selected hidden>Seleccione</option>
+                    <option value="San José">San José</option>
+                    <option value="Alajuela">Alajuela</option>
+                    <option value="Cartago">Cartago</option>
+                    <option value="Heredia">Heredia</option>
+                    <option value="Guanacaste">Guanacaste</option>
+                    <option value="Puntarenas">Puntarenas</option>
+                    <option value="Limón">Limón</option>
+                </select>
+                <button type="submit" id="ingresaDatos">Enviar</button>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
